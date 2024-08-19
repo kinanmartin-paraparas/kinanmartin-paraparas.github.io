@@ -42,27 +42,29 @@
         </div>
     </header>
 
-    <section id="explanation" class="bg-white min-h-[75vh] py-14 px-8 md:px-16 lg:px-32 xl:px-64">
+    <section id="explanation" class="bg-white min-h-[75vh] py-20 px-8 md:px-16 lg:px-32 xl:px-64"> 
+        <!-- min-h-[75vh] -->
         <div class="flex flex-col lg:flex-row lg:justify-around">
             <div class="mb-8 lg:mb-0">
-                <div class="bg-slate-600 h-[300px] w-[100%] lg:h-[300px] lg:w-[300px]">
-                    <!-- Image placeholder -->
+                <div class="bg-transparent h-[300px] w-[100%] lg:h-[300px] lg:w-[300px]">
+                    <img class="h-full w-auto object-contain" src="img/para.png" alt="Para logo">
                 </div>
             </div>
             <div class="lg:ml-40 space-y-4">
-                <div>
+                <div class="mb-14">
                     <h1 class="text-2xl lg:text-4xl">Chatbots are passive tools.</h1>
                     <h1 class="text-4xl lg:text-6xl">Para is your <span>active advisor</span>.</h1>
                 </div>
-                <div>
+                <div class="mb-14 text-xl">
                     <p>Unlike traditional AI agents that passively wait for questions, Para actively tracks your progress, understands your limitations, and guides you to the right questions at the right time.</p>
+                    <br>
                     <p>By progressively leading you through your research journey, Para helps you expand your knowledge with confidence and motivation, ensuring that you're always moving forward, learning, and growing in your field.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="bg-gradient-to-r from-violet-500 to-fuchsia-500 min-h-[75vh] py-14 px-8 md:px-16 lg:px-32 xl:px-64">
+    <section id="faq" class="bg-gradient-to-r from-violet-500 to-fuchsia-500 min-h-[75vh] py-20 px-8 md:px-16 lg:px-32 xl:px-64">
         <div class="flex flex-col lg:flex-row">
             <div class="lg:w-2/5 mb-8 lg:mb-0">
                 <h1 class="text-white text-4xl lg:text-6xl">Frequently asked questions</h1>
@@ -91,31 +93,62 @@
         }
     </script>
     
-    <section id="try_now" class="bg-white min-h-[75vh] py-14 px-8 md:px-16 lg:px-32 xl:px-64">
-        <div class="text-center">
-            <div class="mb-14">
-                <h1 class="text-black text-4xl lg:text-6xl mb-14">Ready to Revolutionize Your Research?</h1>
-                <p class="text-2xl">Get in touch with us to learn more about how Para can empower your academic journey.</p>
-            </div>
-            <div class="mb-14">
-                <button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-2xl px-5 py-2.5 text-center me-2 mb-2">Contact Us</button>
-            </div>
-            <div>
-                <p>Or email us directly at: <a href="mailto:business@paraparas.com"><span class="text-slate-500 underline">business@paraparas.com</span></a></p>
+    <section id="team" class="bg-white min-h-[75vh] py-20 px-8 md:px-16 lg:px-32 xl:px-64">
+        <div class="mx-auto px-4 text-center max-w-4xl">
+            <h2 class="text-4xl lg:text-6xl mb-14">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img src="img/team/Kinan.jpeg" alt="Kinan Martin" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Kinan Martin</h3>
+                        <p class="text-gray-600 text-xl mb-3">Co-founder & CTO</p>
+                        <p class="text-gray-700 text-lg">Kinan holds degrees from MIT in Computer and Cognitive Science. With expertise in NLP and speech processing, he's published in international journals and conferences. A polyglot fluent in 10 languages, Kinan brings a wealth of global research experience to Para.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="overflow-hidden">
+                        <img src="img/team/Qi.jpeg" alt="Qi Chen" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Qi Chen</h3>
+                        <p class="text-gray-600 text-xl mb-3">Co-founder & CEO</p>
+                        <p class="text-gray-700 text-lg">Qi is completing his Ph.D. in Cognitive Science at IUB under Pulitzer Prize-winner Prof. Douglas Hofstadter. His research focuses on analogy-making and adaptive AI. Qi has contributed to significant projects in AI.</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
+    <section id="try_now" class="bg-gradient-to-r from-violet-500 to-fuchsia-500 min-h-[75vh] py-20 px-8 md:px-16 lg:px-32 xl:px-64">
+        <div class="text-center">
+            <div class="mb-14">
+                <h1 class="text-white text-4xl lg:text-6xl mb-14">Ready to Revolutionize Your Research?</h1>
+                <p class="text-white text-2xl">Get in touch with us to learn more about how Para can empower your academic journey.</p>
+            </div>
+            <div class="mb-14">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+                    <span class="relative px-6 py-4 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Contact Us
+                    </span>
+                </button>
+            </div>
+            <div>
+                <p class="text-white">Or email us directly at: <a href="mailto:business@paraparas.com"><span class="text-blue-300 underline">business@paraparas.com</span></a></p>
+            </div>
+        </div>
     </section>
 
     <footer class="bg-gradient-to-r from-violet-700 to-fuchsia-700">
-        <div class="flex justify-between w-full items-center max-w-screen-lg pt-4 pb-2 pl-8 pr-4 sticky top-0 bg-gradient-to-r from-violet-700 to-fuchsia-700">
-            <div class="mx-auto">
+        <div class="flex justify-between w-full items-center pt-4 pb-2 pl-8 pr-4 sticky top-0 bg-gradient-to-r from-violet-700 to-fuchsia-700">
+            <div class="">
                 <a href="https://www.paraparas.com" class="text-white text-4xl">Para</a>
             </div>
             <div class="mx-auto">
                 <p class="text-slate-300">© 2024 Para. All rights reserved.</p>
             </div>
-            <div class="mx-auto">
+            <div class="">
                 <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
                     <span class="relative px-5 py-2.5 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                     Contact Us
